@@ -10,7 +10,8 @@ function App() {
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
-        <p>Pipeline is working.</p>
+        <h2>Hey Tim, the web hosting and backend is setup.</h2>
+        <div> The next step now is to create the UI and the functions</div>
         <a
           className="App-link"
           href="https://reactjs.org"
