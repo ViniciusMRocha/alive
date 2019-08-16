@@ -6,7 +6,17 @@ branches:
   only:
     - master
 
+cache:
+  yarn: true
+
 script:
   - yarn test --coverage
   - yarn build
-  - firebase deploy
+
+deploy:
+  on:
+    branch: master
+  skip_cleanup: true
+  provider: firebase
+  token:
+    - $FIREBASE_TOKEN
