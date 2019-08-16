@@ -9,9 +9,13 @@ branches:
 cache:
   yarn: true
 
+before_script:
+  - npm install firebase-tools -g
+  - cd functions && npm install
+
 script:
   - yarn test --coverage
-  - yarn build
+  - npm run build
 
 deploy:
   on:
