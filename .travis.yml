@@ -15,7 +15,7 @@ before_script:
 
 script:
   - yarn test --coverage
-  - npm run build
+  - yarn build
 
 deploy:
   on:
