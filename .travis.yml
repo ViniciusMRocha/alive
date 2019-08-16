@@ -10,7 +10,6 @@ cache:
   yarn: true
 
 script:
-  - npm i eslint
   - yarn test --coverage
   - yarn build
 
