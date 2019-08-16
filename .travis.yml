@@ -7,10 +7,11 @@ branches:
     - master
 
 cache:
-  npm: true
+  yarn: true
 
 script:
-  - npm run build
+  - yarn test --coverage
+  - yarn build
 
 deploy:
   on:
